@@ -11,25 +11,20 @@ const Services = () => {
         <h1 className='services__title'>Where My <em>Priorities</em> Lie</h1>
         <div className="services__list">
             <div>
-                <i className="fa-solid fa-wand-magic-sparkles"></i>
-                <h2>Optimized Design</h2>
-                <p>I intend to deliever perfect websites with responsive design to make user experience much better.</p>
-            </div>
-            <div>
                 <i className="fa-solid fa-code"></i>
                 <h2>Organized & Clean Code</h2>
-                <p>I try my level best to keep the code clean so that it can be understood easily by other people without giving any headaches.</p>
+                <p>I am committed to writing clean code to enhance readability for other developers.</p>
             </div>
             <div>
                 <i className="fa-solid fa-medal"></i>
             
-                <h2>Focus On Quality</h2>
-                <p>Maintaining quality is very essential part of project so that's exactly what I strive for. </p>
+                <h2>Quality Focused</h2>
+                <p>Maintaining project quality is an essential part of what I strive for.</p>
             </div>
             <div>
                 <i className="fa-solid fa-calendar-day"></i>
-                <h2>Consistent Till The End</h2>
-                <p>No matter what, I always find the right motivation to keep me going without compromising any of my priorities.</p>
+                <h2>Consistent till end</h2>
+                <p>Regardless of the circumstances, I find the motivation to persevere.</p>
             </div>
         </div>
       </div>

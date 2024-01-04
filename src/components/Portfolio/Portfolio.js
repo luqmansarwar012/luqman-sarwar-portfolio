@@ -11,7 +11,7 @@ const Portfolio = () => {
                 <h1 className="portfolio__title">Portfolio</h1>
                 <div className="portfolio__projects">
                 <div className="project">
-                        <img src='images/inProgress.png' alt='...'/>
+                        <img src='images/beloz.png' alt='...'/>
                         <div className="layer">
                             <h2>Beloz Language Services</h2>
                             <p> An American-based project, addressing language barriers,
