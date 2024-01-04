@@ -36,14 +36,14 @@ const Contact = () => {
                 <a href="https://www.linkedin.com/in/luqman-rajput20/">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/luqmanrajput">
+                <a href="https://github.com/luqmansarwar012">
                   <i className="fab fa-github"></i>
                 </a>
               </div>
               <h4 className="my__resume">
                 <em>My Resume:</em>
               </h4>
-              <a href="images/resume.pdf" download className="download__btn">
+              <a href="images/luqman-sarwar.pdf" download className="download__btn">
                 <i className="fa-solid fa-download"></i> Download
               </a>
             </div>

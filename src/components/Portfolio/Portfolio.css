@@ -48,10 +48,10 @@
 .layer h2 {
   font-weight: 600;
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .layer a {
-  margin-top: 20px;
+  margin-top: 5px;
   color: var(--primaryColor);
   text-decoration: none;
   font-size: 18px;

@@ -1,44 +1,25 @@
 import React, { useState } from "react";
 import "../About/About.css";
 const About = () => {
-  const [skills, setSkills] = useState(true);
+  const [skills, setSkills] = useState(false);
   const [education, setEducation] = useState(false);
+  const [experience, setExperience] = useState(true);
+
   const skillsHandler = () => {
-    if (education === true) {
-      // Will first hide the education
       setEducation(false);
-      // And afterwards will handle skills open/close
-      if (skills === false) {
-        setSkills(true);
-      } else {
-        setSkills(false);
-      }
-    } else {
-      if (skills === false) {
-        setSkills(true);
-      } else {
-        setSkills(false);
-      }
-    }
+      setExperience(false);
+      setSkills(true);
   };
   const educationHandler = () => {
-    if (skills === true) {
-      // Will first hide the skills
+      setEducation(true);
+      setExperience(false);
       setSkills(false);
-      // And afterwards will handle education open/close
-      if (education === false) {
-        setEducation(true);
-      } else {
-        setEducation(false);
-      }
-    } else {
-      if (education === false) {
-        setEducation(true);
-      } else {
-        setEducation(false);
-      }
-    }
   };
+  const experienceHandler=()=>{
+    setEducation(false);
+    setExperience(true);
+    setSkills(false);
+  }
   return (
     <>
       <div id="about">
@@ -59,6 +40,14 @@ const About = () => {
               </p>
               {/* About Additionals */}
               <div className="about__extras">
+              <p
+                  className={`extras__headings ${
+                    experience ? "active__extras" : ""
+                  }`}
+                  onClick={experienceHandler}
+                >
+                  Experience
+                </p>
                 <p
                   className={`extras__headings ${
                     skills ? "active__extras" : ""
@@ -78,19 +67,51 @@ const About = () => {
               </div>
               <div
                 className={`extras__content ${
+                  experience ? "active__content" : " "
+                }`}
+              >
+                <ul>
+                  <li>
+                    <span>Backend Developer</span>
+                    <br />
+                    O'Cyber
+                    <span style={{ color: "white", fontWeight: "bold" }}>
+                      {" "}
+                      |{" "}
+                    </span>
+                    Lahore, Pakistan
+                    <br/>
+                    May, 2023 - Jan, 2024
+                  </li>
+                  <li>
+                    <span>Web Developer Intern</span>
+                    <br />
+                    Whitebox Tech.
+                    <span style={{ color: "white", fontWeight: "bold" }}>
+                      {" "}
+                      |{" "}
+                    </span>
+                    Lahore, Pakistan
+                    <br/>
+                    Feb, 2023 - April, 2023
+                  </li>
+                </ul>
+              </div>
+              <div
+                className={`extras__content ${
                   skills ? "active__content" : " "
                 }`}
               >
                 <ul>
                   <li>
-                    <span>Frontend Devlopment</span>
+                    <span>Backend Development</span>
                     <br />
-                    Intermediate
+                    Skillful
                   </li>
                   <li>
-                    <span>Backend Devlopment</span>
+                    <span>Frontend Development</span>
                     <br />
-                    Intermediate
+                    Beginner
                   </li>
                 </ul>
               </div>
@@ -114,11 +135,6 @@ const About = () => {
                     <span>Intermediate in Computer Science</span>
                     <br />
                     Army Public College Sarai Alamgir
-                    <span style={{ color: "white", fontWeight: "bold" }}>
-                      {" "}
-                      /{" "}
-                    </span>
-                    2016-2018
                   </li>
                   <li>
                     <span>Matriculation </span>
