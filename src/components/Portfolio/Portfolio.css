@@ -1,0 +1,80 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Rubik+Dirt&display=swap");
+
+/* Portfolio */
+#portfolio {
+  padding: 50px 0;
+}
+.portfolio__title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+.portfolio__projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.project img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--primaryColor));
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h2 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  color: var(--primaryColor);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+.project:hover .layer {
+  height: 100%;
+}
+
+/* Making responsive for small screens */
+@media only screen and (max-width: 600px) {
+  .portfolio__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+}

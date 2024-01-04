@@ -1,0 +1,60 @@
+/* Primary color */
+
+/* Services Section */
+#services {
+  padding: 30px 0;
+  padding-bottom: 50px;
+}
+.services__title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.services__list div {
+  background: #262626;
+  padding: 25px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 12px;
+  transition: background 0.5s, transform 0.5s;
+}
+.services__list div p {
+  font-size: 15px;
+}
+.services__list div i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.services__list div h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.services__list div:hover {
+  background: var(--primaryColor);
+  transform: translateY(-10px);
+}
+.services__list div:hover p {
+  color: #262626;
+  font-weight: bold;
+}
+.services__list div:hover h2 {
+  color: #262626;
+}
+/* Making responsive for small screens */
+@media only screen and (max-width: 600px) {
+  .services__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .services__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

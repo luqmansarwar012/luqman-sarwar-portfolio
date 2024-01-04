@@ -1,0 +1,130 @@
+/* Technologies Section */
+#tech {
+  background: #080808;
+  padding: 30px 0;
+}
+
+.tech__title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__skill {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.skill__box {
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.skill__box p {
+  font-size: 15px;
+  color: #ababab;
+}
+
+.skill__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill__img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 45px;
+  background: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 60px;
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 45px 0 0 45px;
+}
+
+.skill__title h3 {
+  color: var(--primaryColor);
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0.5rem;
+  margin-bottom: 0px;
+}
+
+.skill__icon {
+  width: 40px;
+  z-index: 2;
+}
+
+/* Making responsive for small screens */
+@media only screen and (max-width: 600px) {
+  .tech__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .skill__box p {
+    font-size: 13px;
+  }
+
+  .skill__box {
+    padding: 0.2rem;
+  }
+
+  .skill__title {
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .skill__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 45px;
+  }
+
+  .skill__img::after {
+    height: 50px;
+  }
+
+  .skill__title h3 {
+    color: var(--primaryColor);
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .skill__icon {
+    width: 30px;
+    z-index: 2;
+  }
+
+  .container__skill {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    padding: 1rem 50px;
+    font-size: 1rem;
+  }
+}

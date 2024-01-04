@@ -1,0 +1,109 @@
+/* Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Courgette&family=DynaPuff&family=Poppins:wght@300;400&family=Rubik+Dirt&display=swap'); */
+
+#navbar {
+  background: #080808;
+  box-shadow: var(--primaryColor);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  width: 250px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Courgette&family=DynaPuff&family=Lobster&family=Pacifico&family=Poppins:wght@300;400&family=Rubik+Dirt&display=swap");
+.logo__text {
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "lobster", cursive;
+  font-size: 25px;
+  color: var(--primaryColor);
+}
+
+.logo__text:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding-bottom: 19px;
+}
+
+nav ul li:hover a {
+  border-bottom: var(--primaryColor) 4px solid;
+  color: var(--primaryColor);
+  transition: ease-in-out 0.2s;
+}
+
+nav .menu__fixer {
+  display: none;
+}
+
+/* Making responsive for small screens */
+@media only screen and (max-width: 600px) {
+  nav .menu__fixer {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .logo__text {
+    font-size: 20px;
+  }
+
+  nav ul {
+    background: var(--primaryColor);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    transition: right 0.5s;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .menu__fixer {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  nav ul li:hover a {
+    border: #080808 2px solid;
+    background: transparent;
+    color: #080808;
+    transition: ease-in-out 0.2s;
+  }
+}
